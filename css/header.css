@@ -1,0 +1,81 @@
+/* 공통 */
+.header_bar{
+    width: 100%;
+    padding: 15px;
+    box-sizing: border-box;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 99999;
+    background-color: rgba(248, 243, 229, 0.4);
+    backdrop-filter: blur(5px);  
+}
+
+.main_logo{
+    position: relative;
+    z-index: 99;
+}
+
+#menu_but{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-style: none;
+    cursor: pointer;
+}
+
+#menu_but img{
+    width: 100%;
+}
+
+/* pc 미디어쿼리 */
+@media all and (min-width: 1281px){ 
+
+    .main_logo{
+        font-size: 2.8rem;
+    }
+
+    #menu_but{
+        font-size: 2.8rem;
+    }
+
+    #menu_but img{
+        margin-left: 30px;
+    }
+
+}
+
+/* 탭 미디어쿼리 */
+@media screen and (min-width:721px) and (max-width:1280px){
+
+    .main_logo{
+        font-size: 2.2rem;
+    }
+
+    #menu_but{
+        font-size: 2.2rem;
+    }
+
+    #menu_but img{
+        margin-left: 20px;
+    }
+}
+
+/* 모바일 미디어쿼리 */
+@media screen and (min-width:320px) and (max-width:720px){
+
+    .main_logo{
+        font-size: 1.4rem;
+    }
+
+    #menu_but{
+        font-size: 1.4rem;
+    }
+
+    #menu_but img{
+        width: 30px;
+        margin-left: 10px;
+    }
+}
